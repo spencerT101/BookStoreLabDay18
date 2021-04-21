@@ -11,7 +11,7 @@ last_name VARCHAR(255)
 
 CREATE TABLE books(
     id SERIAL PRIMARY KEY,
-    book_title VARCHAR(255),
+    title VARCHAR(255),
     genre VARCHAR(255),
     author_id INT REFERENCES authors(id)
 );
