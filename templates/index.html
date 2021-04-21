@@ -1,0 +1,13 @@
+<html>
+{% block content %}
+<h1>yeet</h1>
+{% for book in all_books %}
+<div>
+    {{book.author.first_name}}
+    {{book.author.last_name}}
+    {{book.title}}
+    {{book.genre}}
+</div>
+{% endfor %}
+{% endblock %}
+</html>
